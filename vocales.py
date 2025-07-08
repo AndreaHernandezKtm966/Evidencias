@@ -1,3 +1,4 @@
+
 vocales = input("Ingresa una palabra: ")
 
 vocal = ['a', 'e', 'i', 'o', 'u']

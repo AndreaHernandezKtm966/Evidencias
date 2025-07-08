@@ -1,27 +1,15 @@
 def countApplesAndOranges(s, t, a, b, apples, oranges):
-    # Write your code here
+    
+    apple_positions = [a + d for d in apples]
+    
+    orange_positions = [b + d for d in oranges]
 
-    if __name__ == '__main__':
-        first_multiple_input = input().rstrip().split()
+    
+    apples_in_house = sum(1 for pos in apple_positions if s <= pos <= t)
+    
+    oranges_in_house = sum(1 for pos in orange_positions if s <= pos <= t)
 
-    s = int(first_multiple_input[0])
+    
+    print(apples_in_house)
+    print(oranges_in_house)
 
-    t = int(first_multiple_input[1])
-
-    second_multiple_input = input().rstrip().split()
-
-    a = int(second_multiple_input[0])
-
-    b = int(second_multiple_input[1])
-
-    third_multiple_input = input().rstrip().split()
-
-    m = int(third_multiple_input[0])
-
-    n = int(third_multiple_input[1])
-
-    apples = list(map(int, input().rstrip().split()))
-
-    oranges = list(map(int, input().rstrip().split()))
-
-    countApplesAndOranges(s, t, a, b, apples, oranges)
